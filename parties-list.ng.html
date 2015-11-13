@@ -1,4 +1,4 @@
-<div ng-controller="PartiesListCtrl">
+<div >
 	<form action="">
 		<label for="">Name</label>
 		<input type="text" placeholder="Party name"  ng-model="newParty.name">
@@ -9,7 +9,7 @@
 	</form>
 	<ul>
     <li ng-repeat="party in parties">
-      {{party.name}}
+      <a href="/parties/{{party._id}}">{{party.name}}</a>
       <p>{{party.description}}</p>
       <button ng-click="remove(party)">X</button>
     </li>

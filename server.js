@@ -1,4 +1,3 @@
-Parties = new Mongo.Collection("parties");
  
 if (Meteor.isServer) {
   Meteor.startup(function () {
